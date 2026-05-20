@@ -1,0 +1,162 @@
+/* Configuração Base da Tela de Login */
+#telaLogin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #0d6efd 0%, #212529 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+#conteudoSite {
+    display: none;
+}
+
+/* Abas de Login/Cadastro na Janela */
+.aba-autenticacao {
+    transition: background-color 0.2s, color 0.2s;
+    background-color: #f1f1f1;
+    color: #666;
+}
+.aba-autenticacao.ativa {
+    background-color: #ffffff;
+    color: #0d6efd !important;
+}
+
+/* Imagens do Catálogo */
+.img-produto {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Transições Globais e Defaults */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.card {
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important;
+}
+
+/* ======================================================== */
+/* ELEMENTOS REFORÇADOS PARA O NOVO CARRINHO LATERAL        */
+/* ======================================================== */
+
+#btnVerCarrinho {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+    padding: 14px 24px;
+    font-size: 1.05rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2) !important;
+}
+
+#janelaCarrinho {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 420px;
+    height: 100vh;
+    background: #ffffff;
+    z-index: 1060;
+    overflow-y: auto;
+    box-shadow: -5px 0 25px rgba(0,0,0,0.15);
+}
+
+#carrinhoOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    z-index: 1040;
+}
+
+/* ======================================================== */
+/* ESTILIZAÇÃO COMPATÍVEL COM MODO ESCURO                   */
+/* ======================================================== */
+
+body.dark-theme {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+body.dark-theme .card {
+    background-color: #1e1e1e;
+    color: #ffffff !important;
+    border: 1px solid #2d2d2d;
+}
+
+body.dark-theme .aba-autenticacao {
+    background-color: #2b2b2b;
+    color: #888888;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+body.dark-theme .aba-autenticacao.ativa {
+    background-color: #1e1e1e;
+    color: #0d6efd !important;
+    border-bottom: none;
+}
+
+body.dark-theme h2, 
+body.dark-theme h3, 
+body.dark-theme h4, 
+body.dark-theme h5, 
+body.dark-theme label,
+body.dark-theme .custom-card-title,
+body.dark-theme p.text-muted {
+    color: #ffffff !important;
+}
+
+body.dark-theme .bg-light {
+    background-color: #1a1a1a !important;
+}
+
+body.dark-theme .table {
+    color: #ffffff !important;
+    background-color: #1e1e1e !important;
+}
+
+body.dark-theme .table-responsive {
+    background-color: #1e1e1e !important;
+    border: 1px solid #333;
+}
+
+body.dark-theme td, body.dark-theme th {
+    color: #ffffff !important;
+}
+
+body.dark-theme .form-control,
+body.dark-theme .form-select {
+    background-color: #2b2b2b;
+    border-color: #444;
+    color: #ffffff;
+}
+
+body.dark-theme .form-control::placeholder {
+    color: #aaaaaa;
+}
+
+body.dark-theme .form-control[readonly] {
+    background-color: #1a1a1a;
+    color: #888888;
+    border-color: #333;
+}

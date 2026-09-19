@@ -70,7 +70,7 @@ formCadastro.addEventListener('submit', function(e) {
     const email = document.getElementById('cadEmail').value.trim().toLowerCase();
     const senha = document.getElementById('cadSenha').value;
 
-    if (email === "luiz@02") {
+    if (email === "weberson@01") {
         alert("Este e-mail é reservado para a gerência!");
         return;
     }
@@ -93,13 +93,13 @@ formLogin.addEventListener('submit', function(e) {
     const emailDigitado = loginEmail.value.trim().toLowerCase();
     const senhaDigitada = loginSenha.value;
 
-    if (emailDigitado === "luiz@02") {
-        if (senhaDigitada !== "12022006") {
+    if (emailDigitado === "weberson@01") {
+        if (senhaDigitada !== "81985521") {
             alert("Senha master incorreta!");
             return;
         }
-        usuarioLogadoEmail = "luiz@02";
-        usuarioLogadoNome = "Luiz (Gerente)";
+        usuarioLogadoEmail = "weberson@01";
+        usuarioLogadoNome = "weberson (Gerente)";
         
         montarPainelAdminVisual();
         painelAdmin.style.display = 'block';
